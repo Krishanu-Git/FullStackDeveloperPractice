@@ -1,0 +1,14 @@
+body {
+    background: rgb(159, 73, 73);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-size: 150px;
+    margin: 400px auto 0px auto;
+    font-family: 'Kanit', sans-serif;
+    text-shadow: 0px 0px 20px rgb(0, 0, 0);
+    color: white;
+}

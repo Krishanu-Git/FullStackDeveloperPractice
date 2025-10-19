@@ -1,0 +1,62 @@
+body {
+    background: whitesmoke;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc {
+    border: white;
+    height: 600px;
+    width: 400px;
+    background: black;
+    border-radius: 50px;
+    box-shadow: 0px 0px 50px 10px rgb(199, 100, 100);
+    border: 3px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#input {
+    height: 150px;
+    width: 350px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: white;
+    font-size: 70px;
+}
+
+.cursor {
+    height: 80px;
+    width: 1px;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    from, to {
+        background-color: transparent;
+    }
+    50% {
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+button {
+    background: rgb(243, 139, 12, 0.8);
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    margin: 5px;
+    font-size: 30px;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+}
+
+button:hover {
+    background: rgb(243, 139, 12, 1);
+}

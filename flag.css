@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.saffron {
+    background-color: #FF9933;
+    display: block;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.white {
+    background-color: #FFFFFF;
+    display: flex;
+    height: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* .blue {
+    background-color: #0000FF;
+    display: block;
+    height: 100px;
+    margin-left: 400px;
+    margin-right: 400px;
+} */
+
+.green {
+    background-color: #138808;
+    display: block;
+    height: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+}

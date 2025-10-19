@@ -1,0 +1,19 @@
+body {
+    color: White;
+    background-image: url(./images/space.jpg);
+    background-size: cover;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.b{
+    margin-top: 20px;
+    padding: 5px 10px;
+    font-weight: bold;
+    background: white;
+    border: none;
+}
+
+.cta{
+    border-bottom: 4px solid white;
+}

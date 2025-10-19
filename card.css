@@ -1,0 +1,23 @@
+div{
+    text-align: center;
+    padding: 10px;
+}
+
+.card {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    font-weight: bold;
+    background-color: aquamarine;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: 10px solid violet;
+}
+
+img {
+    width: 300px;
+    padding: 10px;
+}

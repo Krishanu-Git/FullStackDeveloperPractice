@@ -1,0 +1,63 @@
+body {
+    background: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    color: goldenrod;
+    text-shadow: 0px 0px 4px black;
+}
+
+#bj {
+    height: 600px;
+    width: 500px;
+    background: rgb(93, 125, 93);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: 0px 0px 80px 20px goldenrod;
+}
+
+.sg-el, .nc-el {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: 5px;
+    height: 40px;
+    width: 160px;
+    font-size: 20px;
+    font-weight: bold;
+    background: rgb(218, 165, 32);
+    color: rgb(89, 13, 89);
+}
+
+.card-el, .sum-el {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    margin: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.sum-el {
+    margin-bottom: 30px;
+}
+
+.message-el {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.sg-el:hover, .nc-el:hover {
+    background: rgb(212, 160, 29);
+    cursor: grab;
+}

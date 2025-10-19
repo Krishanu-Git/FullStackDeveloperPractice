@@ -1,0 +1,38 @@
+body {
+    margin: 0px;
+    padding: 10px;
+}
+
+#input-el {
+    border-radius: 5px;
+    height: 25px;
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+#input-btn {
+    padding: 5px 15px;
+    background: green;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0px;
+    margin-top: 20px;
+}
+
+li {
+    margin-top: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+}
+
+a {
+    color: rgb(3, 108, 73);
+}
