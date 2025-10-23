@@ -1,6 +1,8 @@
 body {
     margin: 0px;
     padding: 10px;
+    width: 800px;
+    height: 50vh;
 }
 
 #input-el {
@@ -12,13 +14,29 @@ body {
     padding: 10px;
 }
 
-#input-btn {
+#input-btn, #delete-btn, #tab-btn {
     padding: 5px 15px;
     background: green;
     color: white;
     border-radius: 5px;
     font-weight: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 2px solid green;
+}
+
+#input-btn:hover, #tab-btn:hover {
+    cursor: pointer;
+    background: rgb(0, 107, 0);
+}
+
+#delete-btn {
+    color: green;
+    background: white;
+}
+
+#delete-btn:hover {
+    cursor: pointer;
+    background: rgb(231, 224, 224);
 }
 
 ul {
