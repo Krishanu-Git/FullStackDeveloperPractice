@@ -2,7 +2,6 @@
 // const btnEl = document.querySelector("#btn-el")
 // btnEl.innerHTML = "<button id=\"buy-btn\">Buy!</button>"
 
-
 // document.querySelector("#buy-btn").addEventListener("click", () => {
 //         btnEl.innerHTML += "<p>" + "Items added to cart!" + "</p>"
 //     }
@@ -93,3 +92,97 @@ console.log(destination, activity, accomodation, companion)
 
 let speedWarning = speed => `you are going at ${speed} mph`
 console.log(speedWarning(50))
+
+
+let arr = [10,20,30,40,50,60]
+console.log(arr.reduce((acc, start) => {return acc + start}, 0))
+
+
+let setPermissions = (permissionLevel, ...name) => {
+    // console.log(`${name} has ${permissionLevel} level permission`)
+    name.forEach(name => console.log(`${name} has ${permissionLevel} level permission`))
+}
+
+setPermissions('admin', "Krishanu", "Dave", "John")
+
+let recursiveCall = n => {
+    if (n==0)
+        return 0;
+    return n + recursiveCall(n-1);
+}
+
+console.log(recursiveCall(10))
+
+
+const arr2 = ['a','a','a','a','c','b'];
+console.log(arr2.reduce((acc, item) => {
+    if (acc[item])
+        acc[item]++;
+    else
+        acc[item] = 1;
+    return acc;
+}, {}))
+
+const names = ['alice', 'bob', 'charlie'];
+// Expected Output: ['ALICE', 'BOB', 'CHARLIE']
+console.log(names.map((name) => name.toUpperCase()))
+
+const celsiusTemps = [0, 10, 20, 30, 40];
+// Expected Output: [32, 50, 68, 86, 104]
+console.log(celsiusTemps.map(ct => (ct * 9)/5 + 32))
+
+const users = [
+  { id: 101, name: 'Sasha' },
+  { id: 102, name: 'Leo' },
+  { id: 103, name: 'Mila' }
+];
+// Expected Output: [101, 102, 103]
+console.log(users.map((user) => user.id))
+
+const allUsers = [
+  { name: 'Eva', isPremium: true },
+  { name: 'Dan', isPremium: false },
+  { name: 'Omar', isPremium: true },
+  { name: 'Mia', isPremium: false }
+];
+// Expected Output: [{ name: 'Eva', isPremium: true }, { name: 'Omar', isPremium: true }]
+console.log(allUsers.filter(user => user.isPremium === true))
+
+const words = ['log', 'computer', 'cat', 'database', 'pen'];
+// Expected Output: ['computer', 'database']
+console.log(words.filter(word => word.length > 5))
+
+const values = [5, 10, -3, 45, 2];
+// Expected Output: 45
+console.log(values.reduce((acc, value) => {
+    if (value > acc)
+        acc = value
+    return acc
+}, -1))
+
+
+const nested = [[1, 2], [3, 4], [5, 6]];
+// Expected Output: [1, 2, 3, 4, 5, 6]
+console.log(nested.reduce((acc, arr) => {
+    return acc.concat(arr)
+},[]))
+
+const cart = [
+  { item: 'Laptop', price: 1200 },
+  { item: 'Mouse', price: 50 },
+  { item: 'Keyboard', price: 150 }
+];
+// Expected Output: 1400
+console.log(cart.reduce((acc, arr) => {
+    return acc + arr.price;
+}, 0))
+
+
+const players = [
+  { name: 'Player 1', score: 100, isActive: true },
+  { name: 'Player 2', score: 200, isActive: false },
+  { name: 'Player 3', score: 50, isActive: true },
+  { name: 'Player 4', score: 150, isActive: true }
+];
+// Expected Output: 300 (100 + 50 + 150)
+console.log(players.filter(player => player.isActive === true).reduce((acc, p) => {return acc + p.score},0))
