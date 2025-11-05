@@ -1,0 +1,13 @@
+{
+  "name": "wild-horizon",
+  "version": "1.0.0",
+  "description": "a dataset of the planet's most interesting places",
+  "license": "ISC",
+  "author": "Krishanu Das",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  }
+}

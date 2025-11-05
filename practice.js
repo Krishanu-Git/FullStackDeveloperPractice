@@ -186,3 +186,10 @@ const players = [
 ];
 // Expected Output: 300 (100 + 50 + 150)
 console.log(players.filter(player => player.isActive === true).reduce((acc, p) => {return acc + p.score},0))
+
+
+
+let array = [1,2,3,4,5]
+console.log(array.forEach(
+    (a) => console.log(a*5)
+))
